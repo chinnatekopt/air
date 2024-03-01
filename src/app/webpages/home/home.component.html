@@ -1,0 +1,377 @@
+<p-dialog header="Header" [(visible)]="dateview" [style]="{width: '50vw'}">
+    <p-calendar selectionMode="range" [showButtonBar]="true" [inline]="true" [readonlyInput]="true"
+        [numberOfMonths]="2"></p-calendar>
+</p-dialog>
+
+<div class="header-component">
+    <header class="light_header home-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <div class="brand-logo">
+                                <a class="navbar-brand" href="#">
+                                    <img src="../../assets/img/triplogo.png" />
+                                </a>
+                            </div>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Insurance</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <button class="btn custom-btn location-btn">
+                                        <span><i class="fa-solid fa-globe"></i></span> English
+                                    </button>
+                                    <button class="btn custom-btn login-btn" routerLink="/auth">Login/Signup</button>
+                                    <button class="btn custom-btn login-btn" routerLink="/dashboard">Dashboard</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div class="hero-section">
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(../../assets/img/banner1.webp)">
+                <div class="carousel-caption text-center">
+                    <h1>Beyond Your Dream,</h1>
+                    <p>This is the first slide</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(../../assets/img/banner1.webp)">
+                <div class="carousel-caption text-center">
+                    <h1>Beyond Your Dream,</h1>
+                    <p>Within Your Reach!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container flight-form-sec">
+        <div class="row Booking-category-tab">
+            <div class="col-md-6">
+                <div class="booking-category-tabs">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="gap: 12px">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" aria-controls="pills-home" aria-selected="true">
+                                <i class="bi bi-airplane"></i> Flight
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">
+                                <i class="bi bi-buildings"></i> hotel
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab"></div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="booking-category-tabs-right align-items-right">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1" />
+                        <label class="form-check-label" for="inlineRadio1">One way</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2" />
+                        <label class="form-check-label" for="inlineRadio2">Round Trip</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row search-body-input tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="search-section">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="row m-0 depert-arriv-search">
+                                    <div class="col-md-6 p-0">
+                                        <div class="search-form-field Depart-search">
+                                            <label>From</label>
+                                            <div class="box">
+                                                <p-dropdown [options]="countries" class="cust-search-dropdown"
+                                                    optionLabel="name" [filter]="true" filterBy="name">
+                                                </p-dropdown>
+                                            </div>
+                                            <label>Soekarno-Hatta Airport</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-0">
+                                        <div class="search-form-field Arrive-search">
+                                            <label>To</label>
+                                            <div class="box">
+                                                <p-dropdown [options]="countries" class="cust-search-dropdown"
+                                                    optionLabel="name" [filter]="true" filterBy="name">
+                                                </p-dropdown>
+                                            </div>
+                                            <label>Soekarno-Hatta Airport</label>
+                                        </div>
+                                    </div>
+                                    <div class="location-switch">
+                                        <i class="bi bi-arrow-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row m-0 depert-arriv-search">
+                                    <div class="col-md-6 p-0">
+                                        <div class="search-form-field Depart-search">
+                                            <label>Departure Date</label>
+                                            <div class="box">
+                                                <h3 (click)="dateselect()">4 October 2023</h3>
+                                            </div>
+                                            <label>Sunday</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-0">
+                                        <div class="search-form-field Arrive-search">
+                                            <label>Reture Date</label>
+                                            <div class="box">
+                                                <p-calendar selectionMode="range" [showButtonBar]="true"
+                                                    [readonlyInput]="true" [numberOfMonths]="2"></p-calendar>
+                                                <!-- <select class="selectpicker des" data-show-subtext="false"
+                                                    data-live-search="true" style="-webkit-appearance: none">
+                                                    <option value="ALVA">Select Date</option>
+                                                </select> -->
+                                            </div>
+                                            <label>Sunday</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="search-form-field passesnger-input">
+                                    <label>Passager, Class</label>
+
+                                    <div class="box">
+                                        <select class="selectpicker des" data-show-subtext="false"
+                                            data-live-search="true" style="-webkit-appearance: none">
+                                            <option value="ALVA">1 Guest</option>
+                                        </select>
+                                    </div>
+                                    <label>Economy</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="Search-button-section text-center">
+            <button routerLink="/flights" class="btn custom-btn search-btn">
+                Search Flight
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="offers-section">
+    <div class="container offers-section-inner">
+        <p-carousel [value]="items" class="cust-car-ad" [numVisible]="3" [numScroll]="1" [showIndicators]="false"
+            [circular]="true">
+            <ng-template let-imgs pTemplate="item">
+                <div class="offers-img">
+                    <img class="img-thumbnail offer-img-thumbnail" [src]="imgs.img" />
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>
+
+<div class="container home-card-slider">
+    <h2 class="mb-4">Exclusive offer</h2>
+    <p-carousel [value]="items" [numVisible]="4" [numScroll]="1" [showIndicators]="false" [circular]="true">
+        <ng-template let-imgs pTemplate="item">
+            <div class="row cards-wrapper">
+                <div class="col-md-11">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://tripberry.com/assets/images/flights/destination/CPT.jpeg"
+                                class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lagos To Nairobi</h5>
+                            <div class="card-rating">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="card-arr-dep">
+                                <p class="">
+                                    <span>Arrival: Mar 17, 2024, 11:00:00 AM</span>
+                                </p>
+                                <p class="">Departure: Mar 18, 2024, 11:00:00 AM</p>
+                            </div>
+                            <div class="card-footer-price">
+                                <h5>₦908,286</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>
+
+
+<div class="partner-section">
+    <div class="container">
+        <div class="ticket-order-benefits">
+            <img class="w-100" src="../../assets/img/ticket-img.webp" />
+        </div>
+
+        <div class="partner-airline">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-white">
+                    <h3>Partner Airlines</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <img class="w-100" src="../../assets/img/airplain.png" />
+                </div>
+            </div>
+        </div>
+        <div class="partners-logos"></div>
+    </div>
+</div>
+
+<div class="app-download">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h2>The best flight app for your mobile app.</h2>
+                <p>
+                    Make your Flight booking easy by downloading the tripberry app on App
+                    store and Google Play store. Tripberry app is available to download on
+                    your Android and I devices.
+                </p>
+                <h5>Coming Soon..</h5>
+            </div>
+            <div class="col-md-4">
+                <img class="w-100" src="../../assets/img/screenshot.webp" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="mb-4" src="../../assets/img/logo-color.png" />
+                        <div class="footer-left-content">
+                            <p>
+                                # 2A, Block A Annex, Eko Court Complex Kofo Abayomi St, Victoria
+                                Island 234101, Lagos Nigeria.
+                            </p>
+                            <p>+243 808 020 0009</p>
+                            <p>info&#64;tripberry&#64;com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="text-cap">About</span>
+                        <ul class="list-unstyled list-py-1 mb-0">
+                            <li>
+                                <a class="link" href="Who-we-are.php">About Us</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="text-cap">Useful Links </span>
+                        <ul class="list-unstyled list-py-1 mb-0">
+                            <li>
+                                <a class="link" href="Who-we-are.php">About Us</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="text-cap">Help</span>
+                        <ul class="list-unstyled list-py-1 mb-0">
+                            <li>
+                                <a class="link" href="Who-we-are.php">About Us</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                            <li>
+                                <a class="link" href="our-impact.php">Our Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

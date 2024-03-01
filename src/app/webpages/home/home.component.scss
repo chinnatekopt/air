@@ -1,0 +1,291 @@
+.hero-section {
+    height: 100vh;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.hero-section .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.hero-section .carousel {
+    border-radius: 0% 0% 20% 20%;
+    overflow: hidden;
+}
+
+.hero-section .flight-form-sec {
+    position: relative;
+    bottom: 160px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0px 7px 30px 0px rgba(118, 145, 174, 0.08);
+    z-index: 1;
+
+    .nav-link {
+        color: #000;
+        border: 1px solid #E5E5E5;
+        border-radius: 50px;
+    }
+
+    .nav-link.active {
+        background-color: #ef3f3e;
+        color: #fff;
+    }
+
+    .booking-category-tabs-right {
+        text-align: right;
+    }
+
+
+    .search-form-field {
+
+        label {
+            font-size: 12px;
+            color: #86898B;
+        }
+    }
+
+    .Depart-search {
+        padding-right: 0px;
+        border-radius: 12px 0px 0px 12px;
+        border: 1px solid #E1E7EE;
+        padding: 12px;
+    }
+
+    .Arrive-search {
+        padding-left: 0px;
+        border-radius: 0px 12px 12px 0px;
+        border: 1px solid #E1E7EE;
+        padding: 12px 24px;
+    }
+
+    .depert-arriv-search {
+        position: relative;
+    }
+
+    .location-switch {
+
+        .bi-arrow-left-right {
+            color: #58A7FF;
+            background: #fff;
+            border: 1px solid #58A7FF;
+            padding: 6px 9px;
+            border-radius: 50%;
+            position: absolute;
+            top: 34%;
+            left: 47%;
+            font-size: 14px;
+            transform: rotate(180deg);
+        }
+
+        .bi-arrow-left-right:hover {
+            background-color: #58A7FF;
+            color: #fff;
+
+        }
+    }
+
+    .Search-button-section {
+        margin-top: 24px;
+    }
+
+    .search-btn {
+        background-color: #ef3f3e;
+        color: #fff;
+        border-radius: 50px;
+    }
+
+    .search-btn:hover {
+        background-color: #ed1f1f;
+    }
+
+    .selectpicker option {
+        border: none;
+        background-color: white;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color: #000000;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+        padding-left: 12px;
+        margin-top: -20px;
+        background: none;
+    }
+
+    .selectpicker {
+        border: none;
+        background-color: white;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color: #000000;
+        font-weight: 600;
+        font-size: 24px;
+        margin: 0;
+        padding-left: 12;
+        background: none;
+    }
+}
+
+
+.img-thumbnail {
+    border: unset;
+}
+
+
+.offers-section {
+    margin-top: 160px;
+    padding: 32px 0px;
+
+    .offers-section-inner {
+        position: relative;
+    }
+
+    .offers-img {
+        height: 200px;
+    }
+
+    .offer-img-thumbnail {
+        height: 100% !important;
+        width: 100%;
+        border: none;
+        background: unset;
+        border-radius: 12px;
+    }
+
+    .offer-slider-btn-left {
+        position: absolute;
+        top: 36%;
+        left: -7px;
+    }
+
+    .offer-slider-btn-right {
+        position: absolute;
+        top: 36%;
+        right: -7px;
+    }
+
+    .slider-btn {
+        background: #fff;
+        border-radius: 50%;
+        padding: 8px 16px;
+        box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+    }
+
+    .slider-btn:hover {
+        color: #0070ab;
+    }
+}
+
+.home-card-slider {
+
+    padding: 40px 0px;
+
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card {
+        box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+        border: none;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: #e1e1e1;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .card-arr-dep {
+        margin: 6px 0px;
+
+        p {
+            margin: 0px;
+        }
+    }
+
+    .card-footer-price {
+        margin-top: 8px;
+    }
+
+    @media (min-width: 768px) {
+        .card img {
+            height: 11em;
+        }
+    }
+
+}
+
+.partner-section {
+    // background-image: url(../../assets/img/benefit-bg.webp);
+    width: 100%;
+    background-size: cover;
+    margin-top: 130px;
+
+    .ticket-order-benefits {
+        position: relative;
+        top: -96px;
+        margin-bottom: 60px;
+    }
+}
+
+.app-download {
+    padding: 80px 0px;
+}
+
+.footer-section {
+    padding: 20px 0px;
+    background: #fff;
+    border-top: 1px solid #E1E7EE;
+
+    .footer-left-content {
+        p {
+            color: #86898B;
+        }
+    }
+
+    .text-cap {
+        display: block;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .link {
+        display: inline-block;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        color: #86898B;
+        margin-bottom: 16px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
