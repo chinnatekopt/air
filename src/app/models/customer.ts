@@ -1,0 +1,32 @@
+export class Customer {
+    mail!: string;
+    pass!: string;
+    specifyPass!: boolean;
+    confPass!: string;
+    firstName!: string;
+    lastName!: string;
+    altMail!: string;
+    mobNo!: string;
+    phoneNo!: string;
+    country!: string;
+    state!: string;
+    city!: string;
+    area!: string;
+    postalAddr!: string;
+    zip!: string;
+    dob!: string;
+    occupation!: string;
+    company!: string;
+    language!: string;
+    emailsend!: boolean;
+    marketsms!: boolean;
+    marketemail!: boolean;
+    marketappnotification!: boolean;
+    ordersms!: boolean;
+    orderemail!: boolean;
+    orderappnotification!: boolean;
+    gender!: string;
+    receiveOffer!: boolean;
+  accessToken: any;
+    signupType!: string;
+}

@@ -1,0 +1,137 @@
+.loginform {
+	background: #FFF;
+	margin: 90px auto 30px;
+	padding: 15px 30px;
+	border-radius: 0px;
+	box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.2);
+	width: 360px;
+}
+.registerform {
+	background: #FFF;
+	margin: 90px auto 30px;
+	padding: 15px 30px;
+	border-radius: 0px;
+	box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.2);
+	width: 520px;
+}
+.loginform h1 {
+	margin: 0 0 30px 0;
+	padding: 0;
+	font-size: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.registerform h1{
+	text-align: center;
+}
+.logoholder {
+	margin: -46px auto 10px;
+	background: var(--primary);
+	box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
+	width:82px;
+	height:82px;
+	line-height:76px;
+	text-align: center;
+	border-radius: 100px;
+}
+.logoholder img{
+	width:100%;padding: 5px;
+}
+
+.logoholder i{
+	font-size: 3em;
+	color: #FFF;
+	line-height: 82px;
+}
+.control-label {
+	font-size: 13px; 
+	color: #999;
+	text-transform: uppercase;
+	line-height: 20px;
+	font-weight: 500;
+}
+.form-control {
+	border-radius: 0px;
+	border-color: #FFF;
+	border-bottom-color: rgb(255, 255, 255);
+	border-bottom-color: #333;
+    font-size: 14px;
+    padding: 5px;
+}
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #FFF;
+	border-bottom-color: #092143;
+	outline: 0;
+	box-shadow: none;
+}
+.form-group > a {
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 20px; 
+    color: #007ad9;
+    display: block;
+    text-align: right;
+    margin: 20px 0;
+}
+.sign-btn {
+    width: 100%;
+    margin:10px 0px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    background:  var(--secondary);
+	border-color: var(--secondary);
+	padding: 10px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: rgba(0, 0, 0, 0.2);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0, 0, 0, 0.2);
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.createact-holder {
+    text-align: center;
+	margin: 0 0 10px 0;
+	padding: 6px 0;
+	display: block;
+	width: 100%;
+}
+
+.createact-holder > a {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 20px; 
+    color: #007ad9;
+    display: inline-block; 
+    margin:0 5px;
+}
+
+/* .createact-holder > a span { 
+    color: #666;
+    margin-right: 5px; 
+    font-weight: normal;
+} */
+
+.createact-holder > a:hover {
+    text-decoration: underline;
+}
+
+.gfbtn {padding:5px;width: 100%;display: block;}
+.gfbtn a{display:inline-block;margin: 0 5px; padding:0px;font-size:19px;text-align: center;width:36px;line-height:36px;background-color:#f6f6f6;color:#525252;border-radius: 100px;box-shadow:-1px 2px 4px rgba(0, 0, 0, 0.5);}
+.gfbtn a.facebook{color:#FFF;background:#395693;}
+.gfbtn a.google{color:#FFF;background:#d54c3f;}
+.gfbtn a.linkedin{color:#FFF;background:#0073af;}
+
+.emailcont {font-size: 12px;color: #727272;text-align: center;}
+.emailcont b{font-size: 15px;color: #0073af;}
