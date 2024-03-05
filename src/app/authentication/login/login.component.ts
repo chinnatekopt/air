@@ -29,6 +29,9 @@ Savesresponse(responce: any)
   this.url =  'http://localhost:4200';
   return this.http.post(this.url,responce);
 }
+Onclick(){
+
+}
 
 }
 
